@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iv_keluar" type="id">keluar</item>
+    <item name="iv_batu" type="id">batu</item>
+    <item name="iv_kertas" type="id">kertas</item>
+    <item name="iv_gunting" type="id">gunting</item>
+    <item name="iv_guntingcom" type="id">guntingcom</item>
+    <item name="iv_kertascom" type="id">kertascom</item>
+    <item name="iv_batucom" type="id">batucom</item>
+    <item name="tv_hasil" type="id">hasil</item>
+</resources>
