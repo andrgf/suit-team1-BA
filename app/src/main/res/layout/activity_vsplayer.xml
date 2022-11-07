@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gameplay.VSPlayerActivity">
+    tools:context=".gameplay.VSPlayer">
 
     <ImageView
         android:id="@+id/ivLogo"
@@ -13,7 +13,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/logo" />
+        android:contentDescription="@string/logo1" />
 
     <ImageView
         android:id="@+id/iv_close"
@@ -27,12 +27,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_bthome"
+        android:id="@+id/iv_home"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="336dp"
-        android:contentDescription="@string/close"
+        android:layout_marginEnd="328dp"
+        android:contentDescription="@string/home"
         android:src="@drawable/ic_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,11 +48,11 @@
         android:id="@+id/pemain1"
         style="@style/user"
         android:layout_marginStart="16dp"
-        android:text="@string/pemain"
+        android:text="Player 1"
         android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="@+id/com"
+        app:layout_constraintBottom_toBottomOf="@+id/pemain2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/com" />
+        app:layout_constraintTop_toTopOf="@+id/pemain2" />
 
     <ImageView
         android:id="@+id/iv_gunting1"
@@ -85,12 +85,12 @@
         app:layout_constraintTop_toTopOf="@+id/iv_batu2" />
 
     <TextView
-        android:id="@+id/com"
+        android:id="@+id/pemain2"
         style="@style/user"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
-        android:text="@string/pemain1"
+        android:text="Player 2"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lineatas" />
@@ -103,7 +103,7 @@
         android:src="@drawable/ic_gunting"
         app:layout_constraintBottom_toTopOf="@+id/iv_kertas2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/com" />
+        app:layout_constraintTop_toBottomOf="@+id/pemain2" />
 
     <ImageView
         android:id="@+id/iv_kertas2"
@@ -163,5 +163,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="622dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="217dp"
+        android:layout_height="156dp"
+        android:contentDescription="Splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splash_screen"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="34dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

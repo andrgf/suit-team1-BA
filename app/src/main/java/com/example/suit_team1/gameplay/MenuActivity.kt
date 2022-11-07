@@ -18,16 +18,18 @@ class MenuActivity : AppCompatActivity() {
 
         val name = intent.getStringExtra("name")
 
-        binding.tvPemainVsPemain.text = "$name VS Player"
-        binding.tvPemainVsCPU.text = "$name VS CPU"
+        binding.btnPlayerVsPlayer.text = "$name VS Player"
+        binding.btnPlayerVsCPU.text = "$name VS CPU"
+        binding.tvPlayerName.text = "$name"
 
-        binding.ivPemainVsPemain.setOnClickListener {
-            val mIntent = Intent(this, VSPlayerActivity::class.java)
+
+        binding.btnPlayerVsPlayer.setOnClickListener {
+            val mIntent = Intent(this, VSPlayer::class.java)
             mIntent.putExtra("name", name)
             startActivity(mIntent)
 
         }
-        binding.ivPemainVsCPU.setOnClickListener {
+        binding.btnPlayerVsCPU.setOnClickListener {
             val mIntent = Intent(this, VSCPU::class.java)
             mIntent.putExtra("name", name)
             startActivity(mIntent)

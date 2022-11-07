@@ -9,23 +9,23 @@
 
     <ImageView
         android:id="@+id/iv_player"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:contentDescription="@string/pemain_vs_pemain"
-        android:src="@drawable/Ellipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/foto_player"
+        android:src="@drawable/elipse"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="73dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="137dp" />
 
     <TextView
         android:id="@+id/tv_head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="268dp"
         android:fontFamily="sans-serif"
-        android:text="@string/welcome"
+        android:text="@string/WELCOME"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -35,58 +35,57 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_result"
+        android:id="@+id/tv_PlayerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
-        android:text="@string/thor"
+        android:text="@string/THOR"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tv_head"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/tv_head"
         app:layout_constraintTop_toBottomOf="@+id/tv_head" />
 
     <Button
-        android:id="@+id/tv_pemain_vs_pemain"
-        style="@style/landing_menu_text"
-        android:layout_marginTop="144dp"
+        android:id="@+id/btn_Player_vs_Player"
+        android:layout_width="245dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="@color/purple"
-        android:text="@string/player_vs_player"
-        app:layout_constraintEnd_toEndOf="@+id/iv_player"
-        app:layout_constraintStart_toStartOf="@+id/iv_player"
-        app:layout_constraintTop_toBottomOf="@+id/iv_player" />
+        android:text="@string/player_vs_player1"
+        app:layout_constraintEnd_toEndOf="@+id/tv_PlayerName"
+        app:layout_constraintStart_toStartOf="@+id/tv_PlayerName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PlayerName" />
 
     <Button
-        android:id="@+id/tv_pemain_vs_CPU"
-        style="@style/landing_menu_text"
+        android:id="@+id/btn_player_vs_CPU"
         android:layout_width="246dp"
         android:layout_height="47dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/purple"
-        android:text="@string/player_vs_cpu"
-        app:layout_constraintStart_toStartOf="@+id/tv_pemain_vs_pemain"
-        app:layout_constraintTop_toBottomOf="@+id/tv_pemain_vs_pemain" />
+        android:text="@string/player_vs_cpu1"
+        app:layout_constraintStart_toStartOf="@+id/btn_Player_vs_Player"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Player_vs_Player" />
 
     <Button
         android:id="@+id/backtomenu"
-        style="@style/landing_menu_text"
         android:layout_width="246dp"
         android:layout_height="47dp"
         android:layout_marginTop="76dp"
         android:backgroundTint="@color/purple"
-        android:text="@string/back_to_menu"
-        app:layout_constraintStart_toStartOf="@+id/tv_pemain_vs_pemain"
-        app:layout_constraintTop_toBottomOf="@+id/tv_pemain_vs_pemain" />
+        android:text="@string/back_to_menu1"
+        app:layout_constraintStart_toStartOf="@+id/btn_Player_vs_Player"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Player_vs_Player" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_begin="110dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,18 +10,20 @@
         android:id="@+id/ivLogo"
         android:layout_width="0dp"
         android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/logo1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/logo1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_bthome"
-        android:layout_width="71dp"
+        android:id="@+id/iv_home"
+        android:layout_width="60dp"
         android:layout_height="69dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="332dp"
-        android:contentDescription="@string/close"
+        android:contentDescription="@string/home"
         android:src="@drawable/ic_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,8 +32,8 @@
         android:id="@+id/iv_keluar"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:contentDescription="@string/close"
         android:src="@drawable/ic_close"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,10 +47,10 @@
         app:layout_constraintGuide_begin="200dp" />
 
     <TextView
-        android:id="@+id/pemain1"
+        android:id="@+id/pemain"
         style="@style/user"
         android:layout_marginStart="16dp"
-        android:text="@string/pemain"
+        android:text="@string/player"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="@+id/com"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +92,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:gravity="center"
-        android:text="@string/com"
+        android:text="CPU"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lineatas" />
@@ -165,5 +166,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="622dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="217dp"
+        android:layout_height="156dp"
+        android:contentDescription="Splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splash_screen"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="34dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

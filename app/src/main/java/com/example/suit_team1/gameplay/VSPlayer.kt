@@ -13,12 +13,12 @@ import com.example.suit_team1.callback.ResultFragment
 import com.example.suit_team1.controller.Controller
 import com.example.suit_team1.databinding.ActivityVsplayerBinding
 
-open class VSPlayerActivity : AppCompatActivity(), Callback, CallbackFragment {
+open class VSPlayer : AppCompatActivity(), Callback, CallbackFragment {
 
     private val binding by lazy { ActivityVsplayerBinding.inflate(layoutInflater) }
     val name by lazy { intent.getStringExtra("name") }
-    private var hasilPemainSatu = ""
-    private var hasilPemainDua = ""
+    private var resultPlayerOne = ""
+    private var resultPlayerTwo = ""
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,19 +26,16 @@ open class VSPlayerActivity : AppCompatActivity(), Callback, CallbackFragment {
         setContentView(binding.root)
 
         binding.pemain1.text = name
-        showToast(this, "Silahkan pilih terlebih dahulu $name")
+        showToast(this, "Selamat Bermain $name")
 
-        Glide.with(this)
-            .load(getString(R.string.url_tekssplashscreen))
-            .into(binding.ivLogo)
 
-        val btnPemainSatu = arrayOf(
+        val btnPlayerOne = arrayOf(
             binding.ivBatu1,
             binding.ivGunting1,
             binding.ivKertas1,
         )
 
-        val btnPemainDua = arrayOf(
+        val btnPlayerTwo = arrayOf(
             binding.ivBatu2,
             binding.ivGunting2,
             binding.ivKertas2,
@@ -47,37 +44,35 @@ open class VSPlayerActivity : AppCompatActivity(), Callback, CallbackFragment {
 
         disableClick2(false)
         val controller = Controller(this, name, "Pemain 2")
-        btnPemainSatu.forEachIndexed { index, ImageView ->
-            Log.d("pemain satu", "klikk")
+        btnPlayerOne.forEachIndexed { index, ImageView ->
+            Log.d("player 1", "click")
             ImageView.setOnClickListener {
-                hasilPemainSatu = btnPemainSatu[index].contentDescription.toString()
+                resultPlayerOne = btnPlayerOne[index].contentDescription.toString()
 
-                Log.d("PEMAIN SATU", "Memilih $hasilPemainSatu")
-                showToast(this, "$name Memilih $hasilPemainSatu")
+                Log.d("PLAYER 1", "Memilih $resultPlayerOne")
+                showToast(this, "$name Memilih $resultPlayerOne")
 
                 disableClick1(false)
                 disableClick2(true)
 
-                btnPemainSatu.forEach {
+                btnPlayerOne.forEach {
                     it.setBackgroundResource(android.R.color.transparent)
                 }
-//                btnPemainSatu[index].setBackgroundResource(R.drawable.backgorund_shape)
             }
         }
 
-        btnPemainDua.forEachIndexed { index, ImageView ->
-            Log.e("pemain Dua", "klikk")
+        btnPlayerTwo.forEachIndexed { index, ImageView ->
+            Log.e("player 2", "Click")
             ImageView.setOnClickListener {
-                hasilPemainDua = btnPemainDua[index].contentDescription.toString()
-                Log.d("PEMAIN DUA", "Memilih $hasilPemainDua")
-                showToast(this, "Pemain 2 Memilih $hasilPemainDua")
+                resultPlayerTwo = btnPlayerTwo[index].contentDescription.toString()
+                Log.d("PLAYER 2", "Memilih $resultPlayerTwo")
+                showToast(this, "Player 2 Memilih $resultPlayerTwo")
                 disableClick2(false)
-                if (hasilPemainSatu != "") {
-                    controller.cekSuit(hasilPemainSatu, hasilPemainDua)
-                    btnPemainDua.forEach {
+                if (resultPlayerTwo != "") {
+                    controller.cekSuit(resultPlayerOne, resultPlayerTwo)
+                    btnPlayerTwo.forEach {
                         it.setBackgroundResource(android.R.color.transparent)
                     }
-//                    btnPemainDua[index].setBackgroundResource(R.drawable.backgorund_shape)
                 }
             }
 
@@ -90,6 +85,9 @@ open class VSPlayerActivity : AppCompatActivity(), Callback, CallbackFragment {
                 finish()
             }
 
+            binding.ivHome.setOnClickListener {
+                finish()
+            }
         }
     }
 
@@ -124,8 +122,8 @@ open class VSPlayerActivity : AppCompatActivity(), Callback, CallbackFragment {
             ivGunting2.setBackgroundResource(backgroundklik)
             ivKertas2.setBackgroundResource(backgroundklik)
         }
-        hasilPemainSatu = ""
-        hasilPemainDua = ""
+        resultPlayerOne = ""
+        resultPlayerTwo = ""
         disableClick1(true)
         disableClick2(false)
 

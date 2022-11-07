@@ -22,13 +22,10 @@ open class VSCPU : AppCompatActivity(), Callback, CallbackFragment {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.pemain1.text = name
+        binding.pemain.text = name
 
-        Glide.with(this)
-            .load(getString(R.string.url_tekssplashscreen))
-            .into(binding.ivLogo)
 
-        val btnPemain = arrayOf(
+        val btnPlayer = arrayOf(
             binding.ivBatu,
             binding.ivGunting,
             binding.ivKertas,
@@ -42,26 +39,25 @@ open class VSCPU : AppCompatActivity(), Callback, CallbackFragment {
 
 
         val controller = Controller(this, name, "CPU")
-        btnPemain.forEachIndexed { index, ImageView ->
+        btnPlayer.forEachIndexed { index, ImageView ->
             ImageView.setOnClickListener {
                 val hasilCom = btnCom.random()
-                val hasilPemain = btnPemain[index].contentDescription.toString()
+                val hasilPemain = btnPlayer[index].contentDescription.toString()
 
                 Log.d("PEMAIN SATU", "Memilih $hasilPemain")
                 Log.e("PEMAIN SATU", "Memilih $hasilPemain")
                 showToast(this, "$name Memilih $hasilPemain")
                 disableClick(false)
 
-//                hasilCom.setBackgroundResource(R.drawable.backgorund_shape)
+
                 controller.cekSuit(
                     hasilPemain, hasilCom.contentDescription.toString()
                 )
                 Log.d("CPU", "Memilih $hasilCom")
                 showToast(this, "CPU Memilih ${hasilCom.contentDescription}")
-                btnPemain.forEach {
+                btnPlayer.forEach {
                     it.setBackgroundResource(android.R.color.transparent)
                 }
-//                btnPemain[index].setBackgroundResource(R.drawable.backgorund_shape)
             }
         }
 
@@ -73,6 +69,10 @@ open class VSCPU : AppCompatActivity(), Callback, CallbackFragment {
         binding.ivKeluar.setOnClickListener {
             finish()
 
+        }
+
+        binding.ivHome.setOnClickListener {
+            finish()
         }
     }
 
