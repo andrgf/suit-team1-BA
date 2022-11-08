@@ -40,7 +40,7 @@ class OnBoarding3Fragment : Fragment() {
             binding.rcHistory.apply {
                 recyclerView.adapter
                 layoutManager = LinearLayoutManager(activity)
-                recyclerView.adapter = AdapterFragment2(UserLevel.sortUsersLevel(it))
+                recyclerView.adapter = AdapterFragment3(it)
             }
         }
 
