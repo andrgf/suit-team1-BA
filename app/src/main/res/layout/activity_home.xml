@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ui.home.HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_play"
+        app:layout_constraintStart_toStartOf="@+id/btn_play"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        tools:src="@drawable/avatar1" />
+
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:fontFamily="@font/comicsans"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/user_img"
+        tools:text="Joe" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/background_draw"
+        android:backgroundTint="@color/background_draw"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/let_s_play_game"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_history"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@color/background_biru"
+        android:backgroundTint="@color/background_biru"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/history"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_shop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@color/background_biru"
+        android:backgroundTint="@color/background_biru"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/shop"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btn_history" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_profil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@color/background_biru"
+        android:backgroundTint="@color/background_biru"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/profile"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shop" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_topscore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@color/background_biru"
+        android:backgroundTint="@color/background_biru"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/top_score"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btn_profil" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_exit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@color/merah"
+        android:backgroundTint="@color/merah"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/exit"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btn_topscore" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="110dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
