@@ -20,7 +20,8 @@ class RegistrasiPresenter(private val view: RegistrasiContract.View) : Registras
                         username = username,
                         email = email,
                         password = password,
-                        avatarId = avatarId
+                        avatarId = avatarId,
+
                     )
                 )
             }

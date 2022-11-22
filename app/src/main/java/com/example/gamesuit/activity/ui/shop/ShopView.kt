@@ -8,4 +8,6 @@ interface ShopView {
     interface Presenter {
         fun getUser(id: Int): LiveData<User>
     }
+
+
 }

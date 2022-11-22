@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_dialog"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="50dp"
     tools:context=".activity.ui.profil.DialogUpdate">
 
     <ImageView

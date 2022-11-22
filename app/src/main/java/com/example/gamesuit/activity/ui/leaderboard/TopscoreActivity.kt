@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.binar.gamesuit.ui.leaderboard.MainView
-import com.binar.gamesuit.ui.leaderboard.PresenterTopscore
 import com.example.gamesuit.databinding.ActivityTopscoreBinding
 import com.example.gamesuit.until.UserLevel
 

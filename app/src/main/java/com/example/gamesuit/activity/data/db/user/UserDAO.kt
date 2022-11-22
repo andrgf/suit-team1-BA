@@ -42,10 +42,11 @@ interface UserDAO {
         newPass: String,
         id: Int
 
+
     ): Int
 
     @Query("UPDATE ${User.TABLE_NAME} SET batu = :batu, kertas = :kertas, gunting = :gunting WHERE id = :id")
-    fun updateskin(
+    fun updateSkinById(
         batu : Int,
         kertas : Int,
         gunting : Int,
@@ -59,5 +60,6 @@ interface UserDAO {
 
     @Query("SELECT * FROM ${User.TABLE_NAME} WHERE id = :id")
     fun getUserByIdNoLiveData(id: Int): User
+
 
 }

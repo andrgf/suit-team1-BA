@@ -1,4 +1,4 @@
-package com.binar.gamesuit.ui.leaderboard
+package com.example.gamesuit.activity.ui.leaderboard
 
 
 import com.example.gamesuit.activity.ui.leaderboard.TopscoreActivity

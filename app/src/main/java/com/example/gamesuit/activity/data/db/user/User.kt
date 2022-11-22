@@ -44,6 +44,7 @@ data class User(
     var point: Int = 0,
 
 
+
     ) {
     companion object {
         const val TABLE_NAME = "user_table"

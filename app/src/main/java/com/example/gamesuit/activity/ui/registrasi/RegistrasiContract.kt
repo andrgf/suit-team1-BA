@@ -12,6 +12,7 @@ interface RegistrasiContract {
     interface Presenter {
         fun register(username: String, email: String, password: String, avatarId: Int)
         fun getUser(email: String, password: String)
+
     }
 
 

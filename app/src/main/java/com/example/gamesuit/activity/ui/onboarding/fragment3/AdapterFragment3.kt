@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gamesuit.activity.data.db.user.User
+import com.example.gamesuit.databinding.ActivityHistoryBinding
+import com.example.gamesuit.databinding.ActivityItemHistoryBinding
 import com.example.gamesuit.databinding.ActivityItemTopscoreBinding
 import java.text.SimpleDateFormat
 
@@ -16,7 +18,7 @@ class AdapterFragment3(
 
 
 
-    inner class DataLeaderboardFregment3Holder(private val itemBinding: ActivityItemTopscoreBinding) :
+    inner class DataLeaderboardFregment3Holder(private val itemBinding: ActivityItemHistoryBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
 
         @RequiresApi(Build.VERSION_CODES.N)
@@ -35,7 +37,7 @@ class AdapterFragment3(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataLeaderboardFregment3Holder {
         val itemBinding =
-            ActivityItemTopscoreBinding.inflate(
+            ActivityItemHistoryBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false  )
