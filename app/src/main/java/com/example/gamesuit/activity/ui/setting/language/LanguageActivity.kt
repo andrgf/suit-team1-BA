@@ -33,7 +33,9 @@ class LanguageActivity : AppCompatActivity() {
 
                 }
             }
-
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
     }
 
 
