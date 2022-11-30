@@ -76,7 +76,7 @@ class ProfileActivity: AppCompatActivity(), ProfileView {
             onSignOut()
         }
         binding.btnSetting.setOnClickListener {
-            SettingActivity()
+            goto(SettingActivity::class.java)
         }
     }
 
