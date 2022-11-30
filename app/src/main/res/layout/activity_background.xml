@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@android:dimen/app_icon_size"
+        android:text="@string/welcome"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/placeholder"
+        android:contentDescription="Placeholder"/>
+
+
+    <TextView
+        android:id="@+id/txtNightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MySwitch"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nightmode"
+        android:textColor="@color/design_default_color_primary_dark" />
+
+
+    <Switch
+        android:id="@+id/MySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:layout_toRightOf="@+id/txtNightMode"
+        android:checked="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:theme="@style/MySwitch" />
+
+
+</RelativeLayout>

@@ -70,5 +70,46 @@
     <string name="tukar_point">TUKAR POINT</string>
     <string name="skin_kertas_level_up_n_jumlah_point_100">SKIN KERTAS LEVEL UP \n JUMLAH POINT : 100</string>
     <string name="skin_batu_level_up_n_jumlah_point_100">SKIN BATU LEVEL UP \n JUMLAH POINT : 100</string>
+    <string name="language_korean">korean</string>
+    <string name="language_france">France</string>
+    <string name="language_japanese">Japanese</string>
+    <string name="detail_release_date">tanggal sortie</string>
+    <string name="nightmode">night mode</string>
+    <string name="welcome">welcome</string>
+    <string name="toolbar_title">toolbar_title</string>
+    <string name="toolbar_description">toolbar_description</string>
+    <string name="no_favorite_data">no_favorite_data</string>
+    <string name="matikan_musik">Matikan Musik</string>
+    <string name="hidupkan_musik">Hidupkan Musik</string>
+    <string name="description_text">description_text</string>
+    <string name="delete">DELETE</string>
+    <string name="item_movie_title">item_movie_title</string>
+    <string name="item_movie_category">item_movie_category</string>
+    <string name="item_movie_description">item_movie_description</string>
+    <string name="poster_description_text">poster_description_text</string>
+    <string name="setting">SETTING</string>
+    <string name="background">Konteks</string>
+    <string name="sound">Sound</string>
+    <string name="language">Language</string>
+    <string name="favorite">Favorite</string>
+    <string name="toolbar_favorite">Favorite</string>
+    <string name="description">Description</string>
+    <string name="select_language">Select language</string>
+    <string name="main_activity_title">main_activity_title</string>
+    <string name="main_activity_desc">main_activity_desc</string>
+    <string name="main_activity_about">main_activity_about</string>
+    <string name="main_second_activity">main_second_activity</string>
+    <string name="main_activity_to_tr_button">main_activity_to_tr_button</string>
+    <string name="main_activity_to_en_button">main_activity_to_en_button</string>
+    <string name="japanese_language">JAPAN</string>
+    <string name="koreanese_language">KOREAN</string>
+    <string name="frenchise_language">FRANCE</string>
+    <string name="pilih_bahasa">PILIH BAHASA</string>
+    <string name="menang">Gagner</string>
+    <string-array name="language">
+        <item>JAPAN</item>
+        <item>KOREAN</item>
+        <item>FRANCE</item>
+    </string-array>
 
 </resources>
