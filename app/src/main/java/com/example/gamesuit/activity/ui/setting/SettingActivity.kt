@@ -7,6 +7,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.activity.ui.favorite.activity.FavoriteActivity
+import com.example.gamesuit.activity.ui.menu.MenuActivity
 import com.example.gamesuit.activity.ui.setting.background.BackgroundActivity
 import com.example.gamesuit.activity.ui.setting.language.LanguageActivity
 import com.example.gamesuit.activity.ui.setting.sound.SoundActivity
@@ -45,7 +46,7 @@ class SettingActivity : AppCompatActivity(), Settingview {
         }
 
         binding.btnExit.setOnClickListener {
-            finishAffinity()
+            goto(MenuActivity::class.java)
         }
 
     }
