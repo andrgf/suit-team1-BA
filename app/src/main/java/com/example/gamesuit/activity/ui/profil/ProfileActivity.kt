@@ -1,14 +1,18 @@
 package com.example.gamesuit.activity.ui.profil
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import com.example.gamesuit.R
 import com.example.gamesuit.activity.ui.profil.DialogLogout.Companion.DIALOG_LOGOUT
 import com.example.gamesuit.activity.ui.profil.DialogUpdate.Companion.DIALOG_UPDATE
+import com.example.gamesuit.activity.ui.setting.SettingActivity
 import com.example.gamesuit.databinding.ActivityProfilBinding
 import com.example.gamesuit.until.AvatarHelper
+import com.example.gamesuit.until.goto
 import com.example.gamesuit.until.grabText
 
 class ProfileActivity: AppCompatActivity(), ProfileView {
@@ -16,6 +20,7 @@ class ProfileActivity: AppCompatActivity(), ProfileView {
     private lateinit var presenterProfile: PresenterProfile
 
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfilBinding.inflate(layoutInflater)
@@ -69,6 +74,9 @@ class ProfileActivity: AppCompatActivity(), ProfileView {
         }
         binding.btnSignOut.setOnClickListener {
             onSignOut()
+        }
+        binding.btnSetting.setOnClickListener {
+            SettingActivity()
         }
     }
 

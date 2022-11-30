@@ -106,7 +106,7 @@
     <string name="frenchise_language">FRANCE</string>
     <string name="pilih_bahasa">PILIH BAHASA</string>
     <string name="menang">Gagner</string>
-    <string-array name="language">
+    <string-array name="languages">
         <item>JAPAN</item>
         <item>KOREAN</item>
         <item>FRANCE</item>

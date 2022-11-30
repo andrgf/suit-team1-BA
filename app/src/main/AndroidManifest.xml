@@ -27,6 +27,21 @@
             tools:ignore="MissingClass" >
         </activity>
         <activity
+            android:name=".activity.ui.setting.language.LanguageActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".activity.ui.setting.SettingActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".activity.ui.setting.sound.SoundActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".activity.ui.setting.background.BackgroundActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".activity.ui.favorite.activity.FavoriteActivity"
+            android:exported="true"/>
+        <activity
             android:name=".activity.ui.home.HomeActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
