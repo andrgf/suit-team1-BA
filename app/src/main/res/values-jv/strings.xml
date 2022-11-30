@@ -108,9 +108,9 @@
     <string name="menang">Gagner</string>
     <string-array name="languages">
         <item>JAPAN</item>
-        <item>KOREA</item>
-        <item>FRANCE</item>
         <item>JAWA</item>
+        <item>FRANCE</item>
+<!--        <item>JAWA</item>-->
     </string-array>
 
 </resources>

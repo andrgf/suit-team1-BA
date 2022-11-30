@@ -13,7 +13,7 @@ import java.util.*
 
 class LanguageActivity : AppCompatActivity() {
 
-    private val localeList =  listOf("ja", "ko", "fr", "jv")
+    private val localeList =  listOf("ja", "jv", "fr")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
