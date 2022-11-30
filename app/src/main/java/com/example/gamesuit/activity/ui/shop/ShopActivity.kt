@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.activity.data.local.AppSharedPreference
 import com.example.gamesuit.databinding.ActivityShopBinding
 

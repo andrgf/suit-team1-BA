@@ -1,7 +1,6 @@
 package com.example.gamesuit.activity.ui.registrasi
 
 import android.util.Log
-import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.activity.data.local.AppSharedPreference
 import com.example.gamesuit.until.App
 import kotlinx.coroutines.*

@@ -17,4 +17,20 @@
     <color name="purple">#9B6DBB</color>
     <color name="transparent">#00000000</color>
 
+    <!-- Light Theme  -->
+    <color name="backgroundColourLight">#FFFFFF</color>
+    <color name="textColourLight">#000000</color>
+    <color name="btnLight">#448AFF</color>
+    <color name="menuLight">#7C4DFF</color>
+    <color name="cardLight">#fff</color>
+    <color name="exitLight">#FF5252</color>
+
+
+    <!-- Dark Theme  -->
+    <color name="backgroundColourDark">#000000</color>
+    <color name="textColourDark">#18FFFF</color>
+    <color name="btnDark">#40C4FF</color>
+    <color name="menuDark">#536DFE</color>
+    <color name="cardDark">#7C4DFF</color>
+    <color name="exitDark">#FF5252</color>
 </resources>

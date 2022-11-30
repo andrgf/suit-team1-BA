@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".activity.ui.leaderboard.TopscoreActivity">
 
+    <View
+        android:id="@+id/view_setting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/backgorund_view"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="3dp"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
     <ImageView
         android:id="@+id/btnbackhome"
         android:layout_width="wrap_content"
@@ -26,8 +44,7 @@
         android:id="@+id/rcTopscore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTopscore" />
+        app:layout_constraintTop_toBottomOf="@+id/view_setting" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,6 @@
 package com.example.gamesuit.activity.ui.profil
 
 import android.util.Patterns.EMAIL_ADDRESS
-import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.activity.data.local.AppSharedPreference
 import com.example.gamesuit.until.App
 import kotlinx.coroutines.DelicateCoroutinesApi

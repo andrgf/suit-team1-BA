@@ -3,7 +3,6 @@ package com.example.gamesuit.activity.ui.onboarding.fragment2
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.databinding.ActivityItemTopscoreBinding
 
 class AdapterFragment2(

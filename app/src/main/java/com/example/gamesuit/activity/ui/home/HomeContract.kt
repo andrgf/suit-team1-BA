@@ -1,7 +1,6 @@
 package com.example.gamesuit.activity.ui.home
 
 import androidx.lifecycle.LiveData
-import com.example.gamesuit.activity.data.db.user.User
 
 interface HomeContract {
 

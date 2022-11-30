@@ -6,10 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gamesuit.activity.data.db.user.User
-import com.example.gamesuit.databinding.ActivityHistoryBinding
 import com.example.gamesuit.databinding.ActivityItemHistoryBinding
-import com.example.gamesuit.databinding.ActivityItemTopscoreBinding
 import java.text.SimpleDateFormat
 
 class AdapterFragment3(

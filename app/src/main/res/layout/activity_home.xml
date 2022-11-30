@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?backgroundColour"
     tools:context=".activity.ui.home.HomeActivity">
 
 
@@ -38,8 +39,7 @@
         android:id="@+id/btn_play"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@color/background_draw"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@color/background_draw"
         android:fontFamily="@font/comicsans"
         android:text="@string/let_s_play_game"
@@ -51,12 +51,12 @@
         app:layout_constraintStart_toStartOf="@id/start_guideline"
         app:layout_constraintTop_toBottomOf="@+id/tv_username" />
 
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_history"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:background="@color/background_biru"
+        android:layout_marginVertical="5dp"
         android:backgroundTint="@color/background_biru"
         android:fontFamily="@font/comicsans"
         android:text="@string/history"
@@ -72,8 +72,7 @@
         android:id="@+id/btn_shop"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:background="@color/background_biru"
+        android:layout_marginVertical="5dp"
         android:backgroundTint="@color/background_biru"
         android:fontFamily="@font/comicsans"
         android:text="@string/shop"
@@ -86,14 +85,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_history" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_profil"
+        android:id="@+id/btn_video"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:background="@color/background_biru"
+        android:layout_marginVertical="5dp"
         android:backgroundTint="@color/background_biru"
         android:fontFamily="@font/comicsans"
-        android:text="@string/profile"
+        android:text="@string/video"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
         android:textColor="@color/black"
@@ -106,8 +104,7 @@
         android:id="@+id/btn_topscore"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:background="@color/background_biru"
+        android:layout_marginVertical="5dp"
         android:backgroundTint="@color/background_biru"
         android:fontFamily="@font/comicsans"
         android:text="@string/top_score"
@@ -117,14 +114,31 @@
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@+id/end_guideline"
         app:layout_constraintStart_toStartOf="@+id/start_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/btn_profil" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_video" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/background_biru"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/setting"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_exit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_exit"
+        app:layout_constraintTop_toBottomOf="@+id/btn_topscore" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_exit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:background="@color/merah"
+        android:layout_marginVertical="5dp"
         android:backgroundTint="@color/merah"
         android:fontFamily="@font/comicsans"
         android:text="@string/exit"
@@ -134,7 +148,7 @@
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@+id/end_guideline"
         app:layout_constraintStart_toStartOf="@+id/start_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/btn_topscore" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_setting" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/start_guideline"
@@ -156,7 +170,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="110dp" />
+        app:layout_constraintGuide_end="794dp" />
 
 
 

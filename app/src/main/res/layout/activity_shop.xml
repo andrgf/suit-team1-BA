@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".activity.ui.shop.ShopActivity">
 
+    <View
+        android:id="@+id/view_setting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/backgorund_view"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="3dp"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
     <ImageView
         android:id="@+id/user_img"
         android:layout_width="120dp"
@@ -14,7 +33,7 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvShop"
+        app:layout_constraintTop_toBottomOf="@+id/view_setting"
         tools:src="@drawable/avatar1" />
 
 

@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.example.gamesuit.R
 import com.example.gamesuit.databinding.ActivityGameCpuBinding
-import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.activity.data.local.AppSharedPreference
 import com.example.gamesuit.activity.ui.game.CallbackDialogHasilFragment
 import com.example.gamesuit.activity.ui.game.CallbackDialogHasil

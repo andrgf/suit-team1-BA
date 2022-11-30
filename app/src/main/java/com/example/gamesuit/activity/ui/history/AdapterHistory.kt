@@ -5,9 +5,7 @@ import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
-import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.databinding.ActivityItemHistoryBinding
 import java.text.SimpleDateFormat
 
