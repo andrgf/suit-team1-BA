@@ -35,16 +35,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:layout_marginTop="30dp"
         android:id="@+id/btn_registrasi"
         style="@style/MaterialButtonStyle"
         android:layout_width="0dp"
         android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/comicsans"
         android:text="@string/sign_up"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginStart="30dp"
         app:layout_constraintEnd_toStartOf="@+id/btn_login"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

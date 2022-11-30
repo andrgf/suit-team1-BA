@@ -1,6 +1,5 @@
 package com.example.gamesuit.activity.ui.home
 
-import android.content.Intent
 import com.example.gamesuit.activity.ui.profil.ProfileActivity
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -14,8 +13,10 @@ import com.example.gamesuit.activity.ui.history.HistoryActivity
 import com.example.gamesuit.activity.ui.leaderboard.TopscoreActivity
 import com.example.gamesuit.activity.ui.menu.MenuActivity
 import com.example.gamesuit.activity.ui.shop.ShopActivity
+import com.example.gamesuit.activity.ui.video.VideoActivity
 import com.example.gamesuit.databinding.ActivityHomeBinding
 import com.example.gamesuit.until.goto
+
 
 class HomeActivity : AppCompatActivity(), HomeContract.View  {
 
@@ -60,6 +61,10 @@ class HomeActivity : AppCompatActivity(), HomeContract.View  {
 
         binding.btnTopscore.setOnClickListener {
             goto(TopscoreActivity::class.java)
+        }
+
+        binding.btnVideo.setOnClickListener{
+            goto(VideoActivity::class.java)
         }
 
         binding.btnExit.setOnClickListener {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.gamesuit" >
+    package="com.example.gamesuit">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".until.App"
@@ -13,9 +13,22 @@
         android:protectionLevel="signature"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.GameSuit"
-        tools:ignore="AllowBackup" >
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".activity.ui.video.VideoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".activity.ui.onboarding.OnboardingFinishActivity"
             android:exported="true"
@@ -24,48 +37,39 @@
             android:name=".activity.ui.profil.ProfileActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            tools:ignore="MissingClass" >
-        </activity>
+            tools:ignore="MissingClass" />
         <activity
             android:name=".activity.ui.home.HomeActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.registrasi.RegistrasiActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.registrasi.RegisterConfirmationActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.login.LoginActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.leaderboard.ItemTopscoreActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.history.HistoryActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.shop.ShopActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.leaderboard.TopscoreActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.game.player.GamePlayerActivity"
             android:exported="true"
@@ -76,24 +80,21 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ui.splashscreen.SplashScreenActivity"
-            android:exported="true"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.ui.onboarding.OnboardingActivity"
             android:exported="false" />
         <activity
             android:name=".activity.ui.game.cpu.GameCpuActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
