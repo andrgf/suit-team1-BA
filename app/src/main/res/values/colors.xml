@@ -16,6 +16,8 @@
     <color name="orange">#FF9900</color>
     <color name="purple">#9B6DBB</color>
     <color name="transparent">#00000000</color>
+    <color name="pink">#FF00D6</color>
+    <color name="biru_telorasin">#1DFFD6</color>
 
     <!-- Light Theme  -->
     <color name="backgroundColourLight">#FFFFFF</color>

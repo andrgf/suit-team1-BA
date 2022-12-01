@@ -6,12 +6,14 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import com.example.gamesuit.activity.data.db.user.User
 import com.example.gamesuit.activity.data.local.AppSharedPreference
 import com.example.gamesuit.activity.ui.history.HistoryActivity
 import com.example.gamesuit.activity.ui.leaderboard.TopscoreActivity
 import com.example.gamesuit.activity.ui.menu.MenuActivity
 import com.example.gamesuit.activity.ui.setting.SettingActivity
 import com.example.gamesuit.activity.ui.shop.ShopActivity
+import com.example.gamesuit.activity.ui.video.VideoActivity
 import com.example.gamesuit.databinding.ActivityHomeBinding
 import com.example.gamesuit.until.goto
 
@@ -54,6 +56,10 @@ class HomeActivity : AppCompatActivity(), HomeContract.View  {
 
         binding.btnSetting.setOnClickListener {
             goto(SettingActivity::class.java)
+        }
+
+        binding.btnVideo.setOnClickListener {
+            goto(VideoActivity::class.java)
         }
 
         binding.btnTopscore.setOnClickListener {

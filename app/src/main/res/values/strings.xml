@@ -70,10 +70,13 @@
     <string name="tukar_point">TUKAR POINT</string>
     <string name="skin_kertas_level_up_n_jumlah_point_100">SKIN KERTAS LEVEL UP \n JUMLAH POINT : 100</string>
     <string name="skin_batu_level_up_n_jumlah_point_100">SKIN BATU LEVEL UP \n JUMLAH POINT : 100</string>
+    <string name="video">Video</string>
     <string name="setting">Setting</string>
     <string name="video">Video</string>
     <string name="languages">Languages</string>
     <string name="appearance">Appearance</string>
     <string name="game_sound">Game Sound</string>
+    <string name="seen_bookmark">Seen Bookmark</string>
+    <string name="button_back">button back</string>
 
 </resources>
