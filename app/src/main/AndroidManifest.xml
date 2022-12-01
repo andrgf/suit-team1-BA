@@ -13,37 +13,25 @@
         android:protectionLevel="signature"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.GameSuit"
+        android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".ApparanceActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:name=".activity.ui.appearance.ApparanceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
         <activity
-            android:name=".SettingActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        tools:ignore="AllowBackup">
+            android:name=".activity.ui.setting.SettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".activity.ui.video.VideoActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
         <activity
             android:name=".activity.ui.onboarding.OnboardingFinishActivity"
             android:exported="true"
@@ -69,10 +57,7 @@
             android:name=".activity.ui.login.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.ui.leaderboard.ItemTopscoreActivity"
-            android:exported="true"
-            android:screenOrientation="portrait" />
+
         <activity
             android:name=".activity.ui.history.HistoryActivity"
             android:exported="true"
@@ -99,7 +84,6 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -114,6 +98,7 @@
             </intent-filter>
         </activity>
     </application>
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.INTERNET" />

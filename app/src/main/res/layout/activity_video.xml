@@ -6,42 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".activity.ui.video.VideoActivity">
 
-    <FrameLayout
-        android:id="@+id/fl"
+    <View
+        android:id="@+id/view_setting"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/pink"
-        app:layout_constraintBottom_toTopOf="@id/searchView"
+        android:background="@drawable/backgorund_view"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="3dp"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
 
     <ImageView
         android:id="@+id/ivBack"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:contentDescription="button back"
+        android:contentDescription="@string/button_back"
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white" />
+       />
 
     <TextView
         android:id="@+id/tvSeeBookmark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:fontFamily="@font/comicsans"
-        android:text="See\nBookmark"
-        android:textColor="@color/pink"
+        android:text="@string/seen_bookmark"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fl" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <TextView
         android:id="@+id/tvVideo"
@@ -50,7 +58,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/comicsans"
         android:text="VIDEO"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="44sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,21 +70,21 @@
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:background="@drawable/bg_rounded_putih"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
         app:iconifiedByDefault="false"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tvSeeBookmark"
         app:layout_constraintTop_toBottomOf="@id/tvVideo" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchView" />
+
+        app:layout_constraintTop_toBottomOf="@+id/tvSeeBookmark"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

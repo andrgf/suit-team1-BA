@@ -114,7 +114,24 @@
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@+id/end_guideline"
         app:layout_constraintStart_toStartOf="@+id/start_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/btn_profil" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_video" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:background="@color/background_biru"
+        android:backgroundTint="@color/background_biru"
+        android:fontFamily="@font/comicsans"
+        android:text="@string/top_score"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btn_topscore" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_exit"
@@ -131,7 +148,7 @@
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@+id/end_guideline"
         app:layout_constraintStart_toStartOf="@+id/start_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/btn_topscore" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_setting" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/start_guideline"

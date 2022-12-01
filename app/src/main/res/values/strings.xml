@@ -76,5 +76,7 @@
     <string name="languages">Languages</string>
     <string name="appearance">Appearance</string>
     <string name="game_sound">Game Sound</string>
+    <string name="seen_bookmark">Seen Bookmark</string>
+    <string name="button_back">button back</string>
 
 </resources>
