@@ -13,6 +13,7 @@
         android:protectionLevel="signature"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.GameSuit"
         tools:ignore="AllowBackup">
         <activity
@@ -25,6 +26,20 @@
         <activity
             android:name=".SettingActivity"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".activity.ui.video.VideoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -99,5 +114,8 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
