@@ -78,5 +78,11 @@
     <string name="game_sound">Game Sound</string>
     <string name="seen_bookmark">Seen Bookmark</string>
     <string name="button_back">button back</string>
+    <string name="mode_gelap">Mode Gelap</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="sound_on">Sound On</string>
+    <string name="sound_off">Sound Off</string>
+    <string name="sound">Sound</string>
 
 </resources>

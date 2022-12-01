@@ -29,7 +29,7 @@
 
 
     <!-- Dark Theme  -->
-    <color name="backgroundColourDark">#000000</color>
+    <color name="backgroundColourDark">#E040FB</color>
     <color name="textColourDark">#18FFFF</color>
     <color name="btnDark">#40C4FF</color>
     <color name="menuDark">#536DFE</color>
